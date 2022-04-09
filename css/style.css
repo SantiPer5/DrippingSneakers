@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(../root/img/fondo1.png);
-    background-size: 80rem;
+    background: linear-gradient(0deg, beige 10%, brown 200%, tomato 20%);
+    background-size: 80rem;e
 }
 
 #grid-area{
@@ -56,7 +57,7 @@ body {
     text-decoration: none;
 }
 
-.header__nav li:hover{
+.header__nav li:hover{  /* Efectos hover en el nav */
     background: rosybrown;
 }
 
@@ -94,6 +95,7 @@ body {
 .encabezado__head__info.titulo{
     color: black;
     font-style: italic;
+    animation: animacion-encabezado 2s linear 1s infinite;
 }
 
 .encabezado__head__info.texto{
@@ -294,4 +296,22 @@ body {
         display: inline-block;
     }
 }
+
+
+/* Animiaciones */
+
+@keyframes animacion-encabezado {
+    0% { color: brown;
+    font-size: 40px;}
+    25% { color: brown;
+        font-size: 30px;}
+    50% { color: black;
+        font-size: 20px;
+    }
+    75% { color: salmon;
+        font-size: 30px;}
+    100% { color: salmon;
+        font-size: 40px; }
+}
+
 
